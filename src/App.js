@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Nav from './Components/Nav';
+import Main from './Components/Main';
+import { createContext, useState } from 'react';
+import CategoryButton from './Components/CategoryButton';
+import Footer from './Components/Footer';
+export const myContext=createContext();
 
 function App() {
+  const [category, setCategory]=useState('lunch');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <myContext.Provider value={[category,setCategory]}>
+    <Nav />
+    <Header/>
+    <CategoryButton/>
+    <Main />
+    <Footer/>
+    </myContext.Provider>
   );
 }
 
