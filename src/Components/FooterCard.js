@@ -7,7 +7,7 @@ export default function FooterCard(props) {
   return (
     <div>
          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={img} />
+      <Card.Img variant="top" style={{ height: '15rem' }} src={img} />
       <Card.Body>
         <Card.Title>{service}</Card.Title>
         <Card.Text>

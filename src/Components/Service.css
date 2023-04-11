@@ -1,0 +1,15 @@
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    /* grid-template-rows: repeat(12,1f); */
+}
+/* .container>.service:nth-child(1n){
+    grid-row: 1/-1;
+}
+.container>.service:nth-child(2n){
+    grid-row: 2/-1;
+}
+.container>.service:nth-child(3n){
+    grid-row: 1/-1;
+} */

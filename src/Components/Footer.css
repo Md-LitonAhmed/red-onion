@@ -1,5 +1,55 @@
-.footer{
+.commonDiv {
+    background-color: black;
+    margin-top: 20px;
+}
+
+.footer {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    grid-template-columns: repeat(12, 1fr);
+
+    padding: 20px;
+}
+.imgDiv{
+    grid-column: 1/6;
+}
+.detailsDiv{
+    grid-column: 8/10;
+}
+.detailsDiv2{
+    grid-column: 10/12;
+}
+ul{
+    list-style: none ;
+  
+}
+ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.lastDiv {
+
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1f);
+}
+
+.copy {
+    grid-column: 1/7;
+}
+
+.privacy {
+    grid-column: 7/8;
+}
+
+.terms {
+    grid-column: 8/9;
+}
+
+.price {
+    grid-column: 9/10;
+}
+
+.lastDiv>div>h6 {
+    color: white;
 }

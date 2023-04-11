@@ -5,8 +5,10 @@ import Nav from './Components/Nav';
 import Main from './Components/Main';
 import { createContext, useState } from 'react';
 import CategoryButton from './Components/CategoryButton';
-import Footer from './Components/Footer';
+import Service from './Components/Service';
+import Footer from './Components/Footer'
 export const myContext=createContext();
+
 
 function App() {
   const [category, setCategory]=useState('lunch');
@@ -17,6 +19,8 @@ function App() {
     <Header/>
     <CategoryButton/>
     <Main />
+   <Service/>
+   
     <Footer/>
     </myContext.Provider>
   );

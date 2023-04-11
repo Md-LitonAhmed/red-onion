@@ -5,22 +5,27 @@ import { myContext } from '../App';
 
 export default function CategoryButton() {
   const [category, setCategory] = useContext(myContext);
-  const [color,setColor]=useState('');
+  const [colorbreak,setColorbreak]=useState('');
   const [colorlunch,setColorlunch]=useState('');
   const [colordinner,setColordinner]=useState('');
 
 
   const handlerBreak=()=>{
-    const btnColor= color ? '': 'primary';
-    setColor(btnColor);
+   
+    setColorbreak('primary');
+    setColorlunch('');
+    setColordinner('');   
   }
+
   const handlerLunch=()=>{
-    const btnColor= colorlunch ? '': 'primary';
-    setColorlunch(btnColor);
+    setColorlunch('primary');
+    setColorbreak('');
+    setColordinner('');
   }
   const handlerDinner=()=>{
-    const btnColor= colordinner ? '': 'primary';
-    setColordinner(btnColor);
+    setColordinner('primary');
+    setColorbreak('');
+    setColorlunch('');
   }
 
 
@@ -28,8 +33,8 @@ export default function CategoryButton() {
     <div style={{ textAlign: 'center' }}>
      
      
-        <Button  variant={color} onClick={() => {setCategory('breakfast'); handlerBreak();}}>Breakfast</Button>
-        <Button  variant={colorlunch} onClick={() => {setCategory('lunch'); handlerLunch()}} >Lunch</Button>
+        <Button  variant={colorbreak} onClick={() => {setCategory('breakfast'); handlerBreak();}}>Breakfast</Button>
+        <Button  variant={colorlunch} onClick={() => {setCategory('lunch'); handlerLunch()}}>Lunch</Button>
         <Button   variant={colordinner} onClick={() => {setCategory('dinner'); handlerDinner()}} >Dinner</Button>
       
     </div>

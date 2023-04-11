@@ -13,7 +13,7 @@ export default function Main() {
 
     },[category])
   return (
-    <div className='cardStyle'>
+    <div className='cardStyle container'>
        
        {
         foods.map(food =>  <Cart food={food}/>)
