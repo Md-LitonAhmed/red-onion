@@ -6,7 +6,7 @@ export default function Cart(props) {
     const { name, category, img, description, price } = props.food;
     return (
         <div className='container'>
-            <Card style={{ width: '16rem' }}>
+            <Card style={{ width: '20rem', height:'32rem' }}>
                 <div>
                 <Card.Img variant="top" src={img} />
                 </div>
