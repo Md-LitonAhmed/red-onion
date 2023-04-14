@@ -13,7 +13,7 @@ export default function Main() {
 
     },[category])
   return (
-    <div className='cardStyle container'>
+    <div className='cardStyle container  border-0'>
        
        {
         foods.map(food =>  <Cart food={food}/>)

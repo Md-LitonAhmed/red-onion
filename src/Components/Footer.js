@@ -8,19 +8,22 @@ export default function Footer() {
             <div className='footer'>
 
                 <div className='imgDiv'>
-                    <img style={{ height: '50px' }} src={image} />
+                    <img style={{ height: '40px' }} src={image} />
                 </div>
 
                 <div className='detailsDiv'>
-                    <ul>
-                        <li><a href='#'>About Online Food</a></li>
-                        <li><a href='#'>Read Our Blog</a></li>
-                        <li><a href='#'>Sign Up to Deliver</a></li>
-                        <li><a href='#'>Add your Restaurant</a></li>
+                  <div className='info'>
+                  <div>
+                        <ul>
+                            <li><a href='#'>About Online Food</a></li>
+                            <li><a href='#'>Read Our Blog</a></li>
+                            <li><a href='#'>Sign Up to Deliver</a></li>
+                            <li><a href='#'>Add your Restaurant</a></li>
 
-                    </ul>
-                </div>
-                <div className='detailsDiv2'>
+                        </ul>
+                    </div>
+
+                <div>
                     <ul>
                         <li><a href='#'>Get help</a></li>
                         <li><a href='#'>Read FAQS</a></li>
@@ -28,10 +31,13 @@ export default function Footer() {
                         <li><a href='#'>Restaurant near me</a></li>
 
                     </ul>
+
+                </div>
+                  </div>
                 </div>
 
-
             </div>
+
             <div className='lastDiv'>
                 <div className='copy'>
                     <p>copyright@ 2023 Online Food </p>
