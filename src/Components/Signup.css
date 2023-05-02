@@ -1,0 +1,41 @@
+.signupp {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#signup {
+  width: 480px;
+  background-color: #303030;
+  padding: 30px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.signup input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.signup button {
+  width: 100%;
+  background: crimson;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.signup a {
+  color: wheat;
+  text-decoration: none;
+}
+.signup p {
+  margin-top: 10px;
+}
