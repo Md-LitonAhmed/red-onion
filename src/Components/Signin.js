@@ -41,11 +41,11 @@ export default function Signin() {
         });
     }
   };
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      navigate("/");
-    }
-  });
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (user) {
+  //       navigate("/");
+  //     }
+  //   });
   return (
     <div className="signinn">
       <div id="signin">
