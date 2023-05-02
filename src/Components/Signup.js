@@ -6,7 +6,6 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   updateProfile,
-  onAuthStateChanged,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -43,7 +42,7 @@ export default function Signup() {
         })
         .catch((error) => {
           console.log(error.code);
-          if (error.code == "auth/email-already-in-use") {
+          if (error.code === "auth/email-already-in-use") {
             setError("Email already used");
           } else {
             setError("");
