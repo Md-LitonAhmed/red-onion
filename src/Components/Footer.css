@@ -1,61 +1,46 @@
 .commonDiv {
-    background-color: black;
-    margin-top: 20px;
+  background-color: black;
+  margin-top: 20px;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 20px;
-    grid-gap: 7px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
 }
-.imgDiv{
-    grid-column: 1/5;
-}
-.detailsDiv{
-    grid-column: 6/11;
-}
-.info{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
-    justify-content: space-between;
+.footer > .com {
+  text-align: center;
+  color: gray;
+  text-decoration: none;
 }
 /* .detailsDiv2{
     grid-column: 10/12;
 } */
-ul{
-    list-style: none ;
-  
+ul {
+  list-style: none;
 }
-ul>li>a{
-    color: white;
-    text-decoration: none;
+ul > li > a {
+  color: white;
+  text-decoration: none;
 }
-
-.lastDiv {
-
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(12, 1f);
-    grid-gap: 15px;
+.com > a {
+  text-decoration: none;
 }
+/* .lastDiv {
+  background-color: black;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1f);
+  grid-gap: 15px;
+} */
 
 .copy {
-    grid-column: 1/6;
+  text-align: center;
+  padding: 10px;
 }
 
-.privacy {
-    grid-column: 6/9;
-}
-
-.terms {
-    grid-column: 9/10;
-}
-
-.price {
-    grid-column: 10/11;
-}
-
-.lastDiv>div>h6 {
-    color: white;
-}
+/* div > h6 {
+  color: white;
+} */
